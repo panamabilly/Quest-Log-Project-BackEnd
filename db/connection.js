@@ -1,4 +1,3 @@
-// db/connection.js
 //=============================================================================
 // Mongo Atlas Connection
 //=============================================================================
@@ -20,7 +19,7 @@ db.on('disconnected', () => console.log('mongo disconnected'));
 
 // Open the Connection
 db.on('open', () => {
-	console.log('✅ mongo connection made!');
+	console.log('✅ MongoDB connection made!');
 });
 
 // now, our mongoose instance has a configured connection to our local db, in addition

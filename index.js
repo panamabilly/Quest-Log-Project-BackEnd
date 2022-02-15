@@ -29,7 +29,7 @@ app.get('/', (req, res) => {
 });
 /* START CONTROLLERS HERE */
 const resortController = require('./controllers/resortController');
-// direct all requests to '/' to the bookmarks controller
+// direct all requests to '/api/resorts' to the resort controller
 app.use('/api/resorts', resortController);
 
 // const usersController = require('./controllers/usersController');

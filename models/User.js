@@ -5,10 +5,10 @@ const mongoose = require('../db/connection');
 const UserSchema = new mongoose.Schema({
 	name: { type: String, required: false },
 	lastName: { type: String, required: false },
-	userName: { type: String, required: true },
+	userName: { type: String, required: true, unique: true },
 	email: { type: String, unique: true, required: true },
-	password: { type: String, unique: true },
-	timeStamp: { type: Date, default: Date.now },
+	password: { type: String, unique: true, min: 8 },
+	timestamps: true,
 });
 
 // instantiate the model, calling it "User" and with the schema we just made
