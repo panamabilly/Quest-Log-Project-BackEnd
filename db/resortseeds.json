@@ -1,0 +1,22 @@
+[
+	{
+		"name": "Brian Head Resort",
+		"city": "Brian Head",
+		"state": "Utah",
+		"description": "Brian Head Ski Resort offers The Greatest Snow on Earth®, with an annual snowfall of over 360 inches, and Utah’s highest base elevation. Covering over 650 acres, this Utah ski resort has two connected mountains, Giant Steps, and Navajo, offering 71 runs and 8 chair lifts for anyone who loves skiing or snowboarding in Utah.",
+		"image": "https://www.brianhead.com/wp-content/uploads/2020/11/58134-Brian-Head_Trail-Map-WINTER_Map_Only-Back-scaled.jpg",
+		"latitude": "37.70230",
+		"longitude": "-112.84980",
+		"website": "https://www.brianhead.com/"
+	},
+	{
+		"name": "Brighton",
+		"city": "Brighton",
+		"state": "Utah",
+		"description": "Brighton is Utah's only resort that can boast that 100% of its terrain is accessible by high speed quads. Our five quads, one triple and magic carpet service 1,050 acres and 1,875 vertical feet of incredible Utah skiing. Other amenities include The New Millicent Chalet, three additional day lodges, high quality rentals, top notch ski and snowboard school, lockers, cafeterias, a pub, frequent public bus transportation from many points in downtown Salt Lake City and park & ride lots around the valley. What's more, kids 10 and under ski and ride free.",
+		"image": "https://brightonresort.com/documents/Orphaned%20Documents/ZMAP_WEB_compressed.jpg",
+		"latitude": "40.59853",
+		"longitude": "-111.58318",
+		"website": "https://brightonresort.com/"
+	}
+]
