@@ -28,9 +28,9 @@ app.get('/', (req, res) => {
 	res.redirect('/api/bookmarks');
 });
 /* START CONTROLLERS HERE */
-// const bookmarksController = require('./controllers/bookmarksController');
-// // direct all requests to '/api/bookmarks' to the bookmarks controller
-// app.use('/api/bookmarks', bookmarksController);
+const resortController = require('./controllers/resortController');
+// direct all requests to '/' to the bookmarks controller
+app.use('/api/resorts', resortController);
 
 // const usersController = require('./controllers/usersController');
 // app.use('/api/users', usersController);
