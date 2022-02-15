@@ -8,7 +8,7 @@ const UserSchema = new mongoose.Schema({
 	userName: { type: String, required: true, unique: true },
 	email: { type: String, unique: true, required: true },
 	password: { type: String, unique: true, min: 8 },
-	timestamps: true,
+	timeStamp: { type: Date, default: Date.now },
 });
 
 // instantiate the model, calling it "User" and with the schema we just made

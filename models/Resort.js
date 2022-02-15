@@ -10,7 +10,7 @@ const ResortSchema = new mongoose.Schema({
 	image: { data: Buffer, contentType: String },
 	latitude: { type: Number, required: true },
 	longitude: { type: Number, required: true },
-	timestamps: true,
+	timeStamp: { type: Date, default: Date.now },
 	website: { type: String, required: true },
 });
 

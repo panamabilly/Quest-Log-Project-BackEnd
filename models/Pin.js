@@ -10,7 +10,7 @@ const PinSchema = new mongoose.Schema({
 	image: { data: Buffer, contentType: String },
 	latitude: { type: Number, unique: true },
 	longitude: { type: Number, unique: true },
-	timestamps: true,
+	timeStamp: { type: Date, default: Date.now },
 });
 
 // instantiate the model, calling it "User" and with the schema we just made
