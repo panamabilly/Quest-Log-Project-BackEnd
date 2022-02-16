@@ -13,7 +13,7 @@ router.get('/', async (req, res) => {
 		// 1. Get all of the bookmarks from the DB
 		const resorts = await Resort.find({});
 		// 2. Send them back to the client as JSON
-		res.status(200).res.json(resorts);
+		res.status(200).json(resorts);
 	} catch (err) {
 		res.status(500).json(err);
 	}

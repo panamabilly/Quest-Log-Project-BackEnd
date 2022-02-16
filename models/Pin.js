@@ -2,16 +2,20 @@
 const mongoose = require('../db/connection');
 
 // make a new schema with 9 properties, and assign it to a variable
-const PinSchema = new mongoose.Schema({
-	userName: { type: String, required: true },
-	title: { type: String, required: true },
-	description: { type: String, required: false },
-	rating: { type: Number, required: false, min: 0, max: 5 },
-	image: { data: Buffer, contentType: String },
-	latitude: { type: Number, unique: true },
-	longitude: { type: Number, unique: true },
-	timeStamp: { type: Date, default: Date.now },
-});
+const PinSchema = new mongoose.Schema(
+	{
+		userName: { type: String, required: true },
+		title: { type: String, required: true },
+		description: { type: String, required: false },
+		rating: { type: Number, required: false, min: 0, max: 5 },
+		image: { data: Buffer, contentType: String },
+		latitude: { type: Number, unique: true },
+		longitude: { type: Number, unique: true },
+		timeStamp: { type: Date, default: Date.now },
+	},
+
+	{ timestamps: true }
+);
 
 // instantiate the model, calling it "User" and with the schema we just made
 const Pin = mongoose.model('Pin', PinSchema);

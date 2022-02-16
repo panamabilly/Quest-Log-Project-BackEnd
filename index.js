@@ -25,7 +25,7 @@ app.use(express.urlencoded({ extended: true }));
 //=============================================================================
 // Redirect
 app.get('/', (req, res) => {
-	res.redirect('/api/bookmarks');
+	res.redirect('/api/');
 });
 /* START CONTROLLERS HERE */
 const resortController = require('./controllers/resortController');
@@ -36,8 +36,9 @@ const pinController = require('./controllers/pinController');
 // direct all requests to '/api/pins' to the resort controller
 app.use('/api/pins', pinController);
 
-// const usersController = require('./controllers/usersController');
-// app.use('/api/users', usersController);
+const userController = require('./controllers/userController');
+// direct all requests to '/api/users' to the resort controller
+app.use('/api/users', userController);
 
 /* END CONTROLLERS HERE */
 
