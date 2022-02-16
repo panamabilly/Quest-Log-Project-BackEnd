@@ -17,7 +17,7 @@ const PinSchema = new mongoose.Schema(
 	{ timestamps: true }
 );
 
-// instantiate the model, calling it "User" and with the schema we just made
+// instantiate the model, calling it "Pin" and with the schema we just made
 const Pin = mongoose.model('Pin', PinSchema);
 
 // export the newly created model

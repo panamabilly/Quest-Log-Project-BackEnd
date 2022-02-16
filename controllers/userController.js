@@ -24,6 +24,38 @@ router.post('/register', async (req, res) => {
 	}
 });
 
-//login
+//login - Julio Leon helped me fix error in the code where I needed to return nothing if user equals null this was breaking the code and use .compareSync and take out await from line 38
+router.post('/login', async (req, res) => {
+	try {
+		let passwordMatched = true;
+		const user = await User.findOne({ userName: req.body.userName });
+		if (user === null) {
+			res.status(400).json({ error: 'Wrong username or password!' });
+			return;
+		}
+
+		const validPassword = bcrypt.compareSync(req.body.password, user.password);
+		if (!validPassword) {
+			passwordMatched = false;
+		}
+
+		passwordMatched
+			? res.status(200).json({ userName: user.userName })
+			: res.status(400).json({ error: 'Wrong username or password!' });
+	} catch (err) {
+		res.status(500).json(err);
+	}
+});
+
+router.get('/', async (req, res) => {
+	try {
+		// 1. Get all of the bookmarks from the DB
+		const users = await User.find({});
+		// 2. Send them back to the client as JSON
+		res.status(200).json(users);
+	} catch (err) {
+		res.status(500).json(err);
+	}
+});
 
 module.exports = router;

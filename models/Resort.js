@@ -17,7 +17,7 @@ const ResortSchema = new mongoose.Schema(
 	{ timestamps: true }
 );
 
-// instantiate the model, calling it "User" and with the schema we just made
+// instantiate the model, calling it "Resort" and with the schema we just made
 const Resort = mongoose.model('Resort', ResortSchema);
 
 // export the newly created model
