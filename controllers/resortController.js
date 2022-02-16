@@ -13,10 +13,9 @@ router.get('/', async (req, res) => {
 		// 1. Get all of the bookmarks from the DB
 		const resorts = await Resort.find({});
 		// 2. Send them back to the client as JSON
-		res.json(resorts);
-	} catch (error) {
-		// 3. If there's an error, pass it on to the error handling middleware
-		next(error);
+		res.status(200).res.json(resorts);
+	} catch (err) {
+		res.status(500).json(err);
 	}
 });
 

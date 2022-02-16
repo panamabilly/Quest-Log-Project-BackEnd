@@ -32,6 +32,10 @@ const resortController = require('./controllers/resortController');
 // direct all requests to '/api/resorts' to the resort controller
 app.use('/api/resorts', resortController);
 
+const pinController = require('./controllers/pinController');
+// direct all requests to '/api/pins' to the resort controller
+app.use('/api/pins', pinController);
+
 // const usersController = require('./controllers/usersController');
 // app.use('/api/users', usersController);
 
