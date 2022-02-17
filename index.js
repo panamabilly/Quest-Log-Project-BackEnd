@@ -3,13 +3,13 @@
 //=============================================================================
 const express = require('express');
 // instantiate cors
-// const cors = require('cors');
+const cors = require('cors');
 // instantiate express app
 const app = express();
 app.set('port', process.env.PORT || 7000);
 
 // enable cors to allow requests from other URLs
-// app.use(cors());
+app.use(cors());
 //=============================================================================
 // Middleware
 //=============================================================================
