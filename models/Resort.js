@@ -8,9 +8,10 @@ const ResortSchema = new mongoose.Schema(
 		city: { type: String, required: true },
 		state: { type: String, required: true },
 		description: { type: String, unique: true, required: false },
-		image: { data: Buffer, contentType: String },
-		latitude: { type: Number, required: true },
-		longitude: { type: Number, required: true },
+		// image was causing problems with code want to implement image upload later
+		// image: { data: Buffer, contentType: String },
+		lat: { type: Number, required: true },
+		long: { type: Number, required: true },
 		timeStamp: { type: Date, default: Date.now },
 		website: { type: String, required: true },
 	},

@@ -47,13 +47,15 @@ Website: String;
 
 ![Quest-Log Wireframe-React Component Hierarchy](https://media.git.generalassemb.ly/user/40132/files/4e93c280-8b25-11ec-8f77-90c9269be902)
 
-### User stories
-
-As a user, I want to be able to create a profile so that I can save my own pins on the map.
+### User stories (MVP)
 
 As a user, I want to be able to pin locations that I have visited.
 
-As a user, I want to be able to add information into a form about the place that I have visited.
+As a user, I want to be able to add information into a form about the place that I have visited and save the information to a backend server.
+
+### Stretch Goals
+
+As a user, I want to be able to create a profile so that I can save my own pins on the map.
 
 As a user, I want to be able to upload photos to the database.
 

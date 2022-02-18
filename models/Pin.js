@@ -8,9 +8,10 @@ const PinSchema = new mongoose.Schema(
 		title: { type: String, required: true },
 		description: { type: String, required: false },
 		rating: { type: Number, required: false, min: 0, max: 5 },
-		image: { data: Buffer, contentType: String },
-		latitude: { type: Number, unique: true },
-		longitude: { type: Number, unique: true },
+		// image was causing problems with code want to implement image upload later
+		// image: { data: Buffer, contentType: String },
+		lat: { type: Number },
+		long: { type: Number },
 		timeStamp: { type: Date, default: Date.now },
 	},
 

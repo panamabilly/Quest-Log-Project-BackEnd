@@ -5,8 +5,8 @@
 		"description": "Cheap Beers and Good Nachos",
 		"rating": "5",
 		"image": "http://playfoursquare.s3.amazonaws.com/pix/29285891_bA4xjcB4eyax7gWqM8sV_FcA0Y3nqtvGHC0yPMA2Xvs.jpg",
-		"latitude": "40.597607",
-		"longitude": "-111.584373"
+		"lat": "40.597607",
+		"long": "-111.584373"
 	},
 	{
 		"userName": "boarderchick1982",
@@ -17,7 +17,7 @@
 			"http://ot-foodspotting-production.s3.amazonaws.com/reviews/3102329/thumb_600.jpg?1360032130",
 			"https://ir.4sqi.net/img/general/original/bNLHS4i5E166BqCuzRuqn3N9Njeou00S2rpaHGgjSlk.jpg"
 		],
-		"latitude": "40.618931",
-		"longitude": "-111.790878"
+		"lat": "40.618931",
+		"long": "-111.790878"
 	}
 ]
