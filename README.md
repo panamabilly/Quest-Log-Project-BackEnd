@@ -46,6 +46,21 @@ MERN Stack (Full Stack Application)
 ![Quest-Log Wireframe-Photo Gallery _ POST MVP_](https://user-images.githubusercontent.com/93820113/155620427-1f75f0e4-21d7-457e-9960-483f147fd300.jpg)
 ![Quest-Log Wireframe-Resorts Pin](https://user-images.githubusercontent.com/93820113/155620436-654983b8-25f1-4380-82c5-ec669e236c35.jpg)
 
+Running this Back End
+If you want to run this server, you must first install the dependencies used in the app. You can fork and clone down the repository, and install nodemon, CORS, dotenv, Mongoose, and Express with the following command:
+
+npm i cors dotenv mongoose express nodemon
+
+This will install the necessary dependencies that the back end utilizes to send and receive data from MongoDB.
+
+You will then need connect a Database to the app by create a .env file and placing
+
+DATABASE_URL=mongodb+srv://<username>:<password>@cluster0.bc5wb.mongodb.net/<appName>?retryWrites=true&w=majority,
+
+replacing the username and password with your credentials, and replacing the appName with whatever you would like to name the collection.
+
+Finally, the server should be ready to run, which is accomplished by running nodemon index.js within the main directory. The app will default to running on localhost:3000/ or any port you may define within .env.
+
 
 ### Unsolved Issues / Major Hurdles
 
