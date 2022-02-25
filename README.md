@@ -36,15 +36,36 @@ MERN Stack (Full Stack Application)
 -As a user, I want to be able to create a profile so that I can save my own pins on the map.
 -As a user, I want to see what other users of the app have pinned around the world.
 
-### Wireframes
-![Quest-Log Wireframe-React Component Hierarchy](https://user-images.githubusercontent.com/93820113/155620326-28debe22-fbf7-44e2-8ce7-89d7869fe9c7.jpg)
-![Quest-Log Wireframe-App](https://user-images.githubusercontent.com/93820113/155620351-0081a174-739b-4b34-914f-8dc8cb85a834.jpg)
-![Quest-Log Wireframe-Register](https://user-images.githubusercontent.com/93820113/155620370-2ecbd655-cde5-4ca2-bffd-daffd778e861.jpg)
-![Quest-Log Wireframe-Login Screen](https://user-images.githubusercontent.com/93820113/155620380-f6ca3bf6-89d9-435c-a5c5-6a52f3af8684.jpg)
-![Quest-Log Wireframe-NewPin Screen](https://user-images.githubusercontent.com/93820113/155620390-f94a9c33-8bb3-4465-b15a-ced75679ea6d.jpg)
-![Quest-Log Wireframe-ExistingPin Screen](https://user-images.githubusercontent.com/93820113/155620397-dacc6cab-7293-49d1-9f78-5d89fa9e4d17.jpg)
-![Quest-Log Wireframe-Photo Gallery _ POST MVP_](https://user-images.githubusercontent.com/93820113/155620427-1f75f0e4-21d7-457e-9960-483f147fd300.jpg)
-![Quest-Log Wireframe-Resorts Pin](https://user-images.githubusercontent.com/93820113/155620436-654983b8-25f1-4380-82c5-ec669e236c35.jpg)
+### List of backend models and their properties
+Models
+
+User
+UserName: String
+FirstName: String
+LastName: String
+Password: String
+TimeStamp: String
+
+Pin
+UserName: String
+Title: String
+Description: String
+Rating: Number
+Photo: Image File
+Latitude: Number
+Longitude: Number
+TimeStamp: String
+
+Resort
+Name: String
+State: String
+City: String
+Description: String
+Photo: Image file
+Latitude: Number
+Longitude: Number
+Website: String
+
 
 ### Running this Back End
 If you want to run this server, you must first install the dependencies used in the app. You can fork and clone down the repository, and install nodemon, CORS, dotenv, Mongoose, and Express with the following command:
